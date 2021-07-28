@@ -65,3 +65,5 @@ addEventListener('click', function() {
 // A função possui dois argumentos
 // Primeiro é a string 'click'
 // Segundo é um função anônima
+
+// Funções anônimas são aquelas em que o nome da função não é definido, escritas como function() {} ou () => {}
