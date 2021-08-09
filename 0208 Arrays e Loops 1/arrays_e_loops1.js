@@ -27,7 +27,7 @@ Fazem algo repetidamente até que uma condição seja atingida.
 
 */
 
-for (var numero = 0; numero < 10; numero++) {
+for (var numero = 0; numero < 3; numero++) {
   console.log('Loop: ' + numero);
 }
 
@@ -40,7 +40,7 @@ for (var numero = 0; numero < 10; numero++) {
 
 var i = 0;
 
-while (i < 10) {
+while (i < 2) {
   console.log('While: ' + i);
   i++;
 }
@@ -48,3 +48,64 @@ while (i < 10) {
 // Retorna de 0 a 9 no console.
 
 // O for loop é mais comum
+
+
+
+/* Arrays e Loops2 */
+
+var videoGames= ['Switch', 'PS5', 'Xbox One', '3DS'];
+
+for (var i = 0; i < videoGames.length; i++) {
+  console.log(videoGames[i]);
+}
+
+
+/* Break
+
+O loop irá parar caso encontre a palavra 'break'
+
+*/
+
+var videoGames= ['Switch', 'PS5', 'Xbox One', '3DS'];
+for (var i = 0; i < videoGames.length; i++) {
+  console.log(videoGames[i]);
+  if (videoGames[i] === 'PS5') {
+  console.log('Break');  
+  break; 
+  }
+}
+
+
+
+/* forEach
+
+forEach é um método que executa uma função para cada item da Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)
+
+*/
+
+var frutas= ['Banana', 'Pêra', 'Uva', 'Abacaxi', 'Morango', 'Limao', 'Melancia', 'Kiwi'];
+
+frutas.forEach(function(item) {
+  console.log(item);
+});
+
+// O argumento 'item' será atribuído dinamicamente
+
+// Podemos passar os seguintes parâmetros  'items', 'index' e 'array'
+
+console.log('\n\n');
+
+frutas.forEach(function(fruta, index, array){
+  console.log(fruta, index, array);
+})
+
+
+/* Não se confuda coma Sintaxe */
+
+var numero = 0;
+var maximo = 10;
+
+for (;numero < maximo;) {
+  console.log(numero);
+  numero++;
+}
